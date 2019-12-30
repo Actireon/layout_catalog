@@ -81,9 +81,9 @@ body {
       height: 134px;
       display: block;
       margin: 0 auto; }
-  .cards__title {
+  .cards-title {
     margin-top: 45px; }
-    .cards__title .cards__header {
+    .cards-title .cards-title__header {
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
@@ -110,9 +110,9 @@ body {
         margin-right: 4px; }
       .cards__reviews .cards__stars .cards__star:nth-child(n+5) {
         background-image: url("../images/star.svg"); }
-  .cards__feedback, .cards__price, .cards__code {
+  .cards__feedback, .cards-cost__price, .cards-title__code {
     font-size: 11px; }
-  .cards__cost {
+  .cards-cost {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,7 +123,7 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-top: 20px; }
-    .cards__cost .cards__sum {
+    .cards-cost .cards-cost__sum {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px; }
