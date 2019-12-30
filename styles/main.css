@@ -6,7 +6,7 @@
 body {
   font-family: roboto, sans-serif; }
 
-.nav {
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,9 +46,9 @@ body {
   text-transform: uppercase;
   color: #000;
   font-weight: 500; }
-  .nav__link:hover, .nav__link.nav__link--active {
+  .nav__link:hover, .nav__link.nav__link--is-active {
     color: #00acdc; }
-  .nav__link.nav__link--active::after {
+  .nav__link.nav__link--is-active::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -58,9 +58,9 @@ body {
     background: #00acdc;
     border-radius: 8px; }
 
-.nav__list {
+.nav__item {
   position: relative; }
-  .nav__list:not(:first-of-type) {
+  .nav__item:not(:first-of-type) {
     margin-left: 20px; }
 
 .card {
@@ -74,25 +74,25 @@ body {
       flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto; }
-  .card .card__wrapper {
+  .card .card-wrapper {
     width: 200px;
     border: 1px solid #f3f3f3;
     border-radius: 5px;
     margin: 0 24px 50px;
     padding: 30px 14px 15px; }
-    .card .card__wrapper .card__image {
+    .card .card-wrapper .card-image {
       width: 160px;
       height: 134px;
       display: block;
       margin: 0 auto; }
-  .card .card__title {
+  .card .card-title {
     margin-top: 45px; }
-    .card .card__title .card__header {
+    .card .card-title .card-title__header {
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 5px; }
-  .card .card__reviews {
+  .card .card-reviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,22 +103,22 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 15px; }
-    .card .card__reviews .card__stars {
+    .card .card-reviews .card-stars {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .card .card__reviews .card__stars .card__star--active {
+      .card .card-reviews .card-stars .card-stars__star--active {
         width: 15px;
         height: 15px;
         background: url("../images/star-active.svg") center no-repeat;
         margin-right: 4px; }
-      .card .card__reviews .card__stars .card__star:nth-child(n+5) {
+      .card .card-reviews .card-stars .card-stars__star:nth-child(n+5) {
         background-image: url("../images/star.svg"); }
-  .card .card__feedback,
-  .card .card__price,
-  .card .card__code {
+  .card .card-feedback,
+  .card .card-cost__price,
+  .card .card-title__code {
     font-size: 11px; }
-  .card .card__cost {
+  .card .card-cost {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -129,11 +129,11 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-top: 20px; }
-    .card .card__cost .card__sum {
+    .card .card-cost .card-cost__sum {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px; }
-  .card .card__button {
+  .card .card-button {
     font-family: roboto, sans-serif;
     width: 170px;
     height: 40px;
@@ -146,7 +146,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     margin-top: 20px; }
-    .card .card__button:hover {
+    .card .card-button:hover {
       color: #00acdc;
       background-color: #fff;
       border: 1px solid #00acdc;
