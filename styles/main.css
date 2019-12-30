@@ -20,21 +20,21 @@ body {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   margin-bottom: 50px; }
-  .header .header-logo {
+  .header .header__logo {
     width: 40px;
     height: 40px; }
-  .header .nav-list {
+  .header .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0; }
-    .header .nav-list .nav-item {
+    .header .nav__list .nav__item {
       position: relative; }
-      .header .nav-list .nav-item:not(:first-of-type) {
+      .header .nav__list .nav__item:not(:first-of-type) {
         margin-left: 20px; }
-      .header .nav-list .nav-item .nav-link {
+      .header .nav__list .nav__item .nav__link {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -47,9 +47,9 @@ body {
         text-transform: uppercase;
         color: #000;
         font-weight: 500; }
-        .header .nav-list .nav-item .nav-link:hover, .header .nav-list .nav-item .nav-link.nav-link--is-active {
+        .header .nav__list .nav__item .nav__link:hover, .header .nav__list .nav__item .nav__link.nav__link--is-active {
           color: #00acdc; }
-        .header .nav-list .nav-item .nav-link.nav-link--is-active::after {
+        .header .nav__list .nav__item .nav__link.nav__link--is-active::after {
           content: "";
           position: absolute;
           bottom: 0;
@@ -59,7 +59,7 @@ body {
           background: #00acdc;
           border-radius: 8px; }
 
-.card {
+.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,25 +70,25 @@ body {
       flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto; }
-  .card .card-wrapper {
+  .cards .cards__wrapper {
     width: 200px;
     border: 1px solid #f3f3f3;
     border-radius: 5px;
     margin: 0 24px 50px;
     padding: 30px 14px 15px; }
-    .card .card-wrapper .card-image {
+    .cards .cards__wrapper .cards__image {
       width: 160px;
       height: 134px;
       display: block;
       margin: 0 auto; }
-  .card .card-title {
+  .cards .cards__title {
     margin-top: 45px; }
-    .card .card-title .card-title__header {
+    .cards .cards__title .cards__header {
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 5px; }
-  .card .card-reviews {
+  .cards .cards__reviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,22 +99,22 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 15px; }
-    .card .card-reviews .card-stars {
+    .cards .cards__reviews .cards__stars {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .card .card-reviews .card-stars .card-stars__star--active {
+      .cards .cards__reviews .cards__stars .cards__star--active {
         width: 15px;
         height: 15px;
         background: url("../images/star-active.svg") center no-repeat;
         margin-right: 4px; }
-      .card .card-reviews .card-stars .card-stars__star:nth-child(n+5) {
+      .cards .cards__reviews .cards__stars .cards__star:nth-child(n+5) {
         background-image: url("../images/star.svg"); }
-  .card .card-feedback,
-  .card .card-cost__price,
-  .card .card-title__code {
+  .cards .cards__feedback,
+  .cards .cards__price,
+  .cards .cards__code {
     font-size: 11px; }
-  .card .card-cost {
+  .cards .cards__cost {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,11 +125,11 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-top: 20px; }
-    .card .card-cost .card-cost__sum {
+    .cards .cards__cost .cards__sum {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px; }
-  .card .card-button {
+  .cards .cards__button {
     font-family: roboto, sans-serif;
     width: 170px;
     height: 40px;
@@ -142,7 +142,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     margin-top: 20px; }
-    .card .card-button:hover {
+    .cards .cards__button:hover {
       color: #00acdc;
       background-color: #fff;
       border: 1px solid #00acdc;
