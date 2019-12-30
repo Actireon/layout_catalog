@@ -70,25 +70,25 @@ body {
       flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto; }
-  .cards__wrapper {
+  .cards .card__wrapper {
     width: 200px;
     border: 1px solid #f3f3f3;
     border-radius: 5px;
     margin: 0 24px 50px;
     padding: 30px 14px 15px; }
-    .cards__wrapper .cards__image {
+    .cards .card__wrapper .card__image {
       width: 160px;
       height: 134px;
       display: block;
       margin: 0 auto; }
-  .cards-title {
+  .cards .card-title {
     margin-top: 45px; }
-    .cards-title .cards-title__header {
+    .cards .card-title__header {
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 5px; }
-  .cards__reviews {
+  .cards .card__reviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,20 +99,22 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 15px; }
-    .cards__reviews .cards__stars {
+    .cards .card__reviews .card__stars {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .cards__reviews .cards__stars .cards__star--active {
+      .cards .card__reviews .card__stars .card__star--active {
         width: 15px;
         height: 15px;
         background: url("../images/star-active.svg") center no-repeat;
         margin-right: 4px; }
-      .cards__reviews .cards__stars .cards__star:nth-child(n+5) {
+      .cards .card__reviews .card__stars .card__star:nth-child(n+5) {
         background-image: url("../images/star.svg"); }
-  .cards__feedback, .cards-cost__price, .cards-title__code {
+  .cards .card__feedback,
+  .cards .card-cost__price,
+  .cards .card-title__code {
     font-size: 11px; }
-  .cards-cost {
+  .cards .card-cost {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,11 +125,11 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-top: 20px; }
-    .cards-cost .cards-cost__sum {
+    .cards .card-cost__sum {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px; }
-  .cards__button {
+  .cards .card__button {
     font-family: roboto, sans-serif;
     width: 170px;
     height: 40px;
@@ -140,7 +142,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     margin-top: 20px; }
-    .cards__button:hover {
+    .cards .card__button:hover {
       color: #00acdc;
       background-color: #fff;
       border: 1px solid #00acdc;
