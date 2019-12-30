@@ -20,7 +20,7 @@ body {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   margin-bottom: 50px; }
-  .header .header__logo {
+  .header__logo {
     width: 40px;
     height: 40px; }
   .header .nav__list {
@@ -70,25 +70,25 @@ body {
       flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto; }
-  .cards .cards__wrapper {
+  .cards__wrapper {
     width: 200px;
     border: 1px solid #f3f3f3;
     border-radius: 5px;
     margin: 0 24px 50px;
     padding: 30px 14px 15px; }
-    .cards .cards__wrapper .cards__image {
+    .cards__wrapper .cards__image {
       width: 160px;
       height: 134px;
       display: block;
       margin: 0 auto; }
-  .cards .cards__title {
+  .cards__title {
     margin-top: 45px; }
-    .cards .cards__title .cards__header {
+    .cards__title .cards__header {
       font-weight: 500;
       font-size: 12px;
       line-height: 15px;
       margin-bottom: 5px; }
-  .cards .cards__reviews {
+  .cards__reviews {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,22 +99,20 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 15px; }
-    .cards .cards__reviews .cards__stars {
+    .cards__reviews .cards__stars {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .cards .cards__reviews .cards__stars .cards__star--active {
+      .cards__reviews .cards__stars .cards__star--active {
         width: 15px;
         height: 15px;
         background: url("../images/star-active.svg") center no-repeat;
         margin-right: 4px; }
-      .cards .cards__reviews .cards__stars .cards__star:nth-child(n+5) {
+      .cards__reviews .cards__stars .cards__star:nth-child(n+5) {
         background-image: url("../images/star.svg"); }
-  .cards .cards__feedback,
-  .cards .cards__price,
-  .cards .cards__code {
+  .cards__feedback, .cards__price, .cards__code {
     font-size: 11px; }
-  .cards .cards__cost {
+  .cards__cost {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,11 +123,11 @@ body {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-top: 20px; }
-    .cards .cards__cost .cards__sum {
+    .cards__cost .cards__sum {
       font-weight: bold;
       font-size: 16px;
       line-height: 19px; }
-  .cards .cards__button {
+  .cards__button {
     font-family: roboto, sans-serif;
     width: 170px;
     height: 40px;
@@ -142,7 +140,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     margin-top: 20px; }
-    .cards .cards__button:hover {
+    .cards__button:hover {
       color: #00acdc;
       background-color: #fff;
       border: 1px solid #00acdc;
