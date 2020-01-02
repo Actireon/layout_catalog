@@ -60,16 +60,10 @@ body {
           border-radius: 8px; }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto; }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 48px;
+  justify-items: center; }
   .cards .card__wrapper {
     width: 200px;
     border: 1px solid #f3f3f3;
@@ -149,5 +143,12 @@ body {
       cursor: pointer;
       -webkit-transition: color 500ms ease-in-out;
       transition: color 500ms ease-in-out; }
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(4, 200px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */
